@@ -8,7 +8,7 @@ namespace DLayer
 {
     public class Student
     {
-        public int ID { get; set; }
+        public int StudentID { get; set; }
         public string StudentName { get; set; }
         public int Age { get; set; }
         public int TotalCourseEnrolled { get; set; }
