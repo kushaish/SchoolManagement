@@ -1,0 +1,40 @@
+﻿@using MVCSampleApplication.Models;
+@model List<StudentModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="jumbotron">
+
+ </div>
+
+<div class="row">
+    <h2>@ViewBag.Title.</h2>
+    <table style="width:100%">
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Age</th>
+            <th>Total Course Enrolled</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.StudentName</td>
+                <td>@item.Age</td>
+                <td><a data-toggle="tooltip" href="#" title="Name:@item.StudentName
+                    Age:@item.Age">@item.TotalCourseEnrolled</a></td>
+            </tr>
+        }
+    </table>
+    @Html.ActionLink("Lyubomir ", "ViewLyubomir", "Home", null, new { @class = "modal-link btn btn-success" })
+</div>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        
+    });
+   
+</script>
