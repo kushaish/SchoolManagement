@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 namespace DLayer
 {
+    /// <summary>
+    /// My Repo Interface
+    /// </summary>
     interface IStudentRepository
     {
         List<Student> GetAllStudent();
